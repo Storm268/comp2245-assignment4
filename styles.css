@@ -1,14 +1,144 @@
-input[type="text"] {
-    padding: 10px;
-    width: 300px;
-    font-size: 16px;
-    margin-bottom: 10px;
+body, h1, h2, h3, h4, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url('movie.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    line-height: 1.5;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.85);
+    border-bottom: 3px solid #ff4500;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #ffcc00;
+    text-shadow: 3px 3px 8px rgba(255, 69, 0, 0.8);
+}
+
+main {
+    width: 85%;
+    margin: 40px auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.search-container label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.search-container input[type="text"] {
+    padding: 12px;
+    width: 70%;
+    max-width: 600px;
+    font-size: 1.2rem;
+    border: 2px solid #ffcc00;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.search-container input::placeholder {
+    color: #ccc;
+}
+
+.search-container button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #ff4500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 8px #000;
+}
+
+.search-container button:hover {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+#result-container {
+    text-align: center;
+    margin-top: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ffcc00;
+}
+
+#result-container h2 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px #000;
 }
 
 #result {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
+    font-size: 1.4rem;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 0px 15px 5px rgba(255, 69, 0, 0.5);
+}
+
+#result h3 {
+    font-size: 2rem;
+    color: #ffcc00;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 6px rgba(255, 69, 0, 0.8);
+}
+
+#result h4 {
+    font-size: 1.5rem;
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
+#result p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.85);
+    border-top: 3px solid #ff4500;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #ffcc00;
 }

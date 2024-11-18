@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avengers Character Search</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Avengers Character Search</h1>
-    <input type="text" id="searchQuery" placeholder="Enter superhero name or alias">
-    <button id="search">Search</button>
-    <div id="result"></div>
+    <header>
+        <h1>AVENGERS CHARACTER SEARCH</h1>
+    </header>
+    <main>
+        <section class="search-container">
+            <label for="searchQuery">Search by Full Name or Alias</label>
+            <input type="text" id="searchQuery" placeholder="e.g. Captain America or Steve Rogers">
+            <button id="search">Search</button>
+        </section>
+        <section id="result-container">
+            <h2>RESULT</h2>
+            <div id="result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Avengers Initiative</p>
+    </footer>
     <script src="app.js"></script>
 </body>
+
 </html>
